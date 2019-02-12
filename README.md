@@ -4,6 +4,7 @@ This demo app displays the Ethereum Network's Overall Status and Recent Mining D
 
 <h4>Code Architecture</h4>
 MVC (Model-View-Controller) and Observer Pattern
+Page Routing
 <br>
 <br>
 
