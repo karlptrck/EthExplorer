@@ -9,11 +9,9 @@ import BlocksbyMinerView from './views/BlocksbyMinerView.js'
 
 
 let api = new APIService()
-let contentDiv = document.getElementById('container')
-
 const startPreviewer = () => {
     console.log('Page Loaded')
-    contentDiv.innerHTML = routes[window.location.pathname]
+    document.getElementById('container').innerHTML = routes[window.location.pathname]
     renderHomePage()
 
 }   
@@ -65,7 +63,7 @@ let routes = {
 
 window.onpopstate = () => {
     var destinationPath = window.location.pathname
-    contentDiv.innerHTML = routes[destinationPath]
+    document.getElementById('container').innerHTML = routes[destinationPath]
     renderPage(destinationPath)
 }
 
